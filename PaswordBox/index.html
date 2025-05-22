@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Hower experiment</title>
+  </head>
+  <body>
+    <h1>Welcome to Password Box</h1>
+    <div class="input-container">
+      Password: <input type="password" id="password" /><br /><br />
+      <input type="checkbox" onclick="showPassword()" />Show Password
+    </div>
+
+    <script>
+      function showPassword() {
+        var passwordEdit = document.getElementById("password");
+        if (passwordEdit.type === "password") {
+          passwordEdit.type = "text";
+        } else {
+          passwordEdit.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
